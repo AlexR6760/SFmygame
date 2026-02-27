@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Shinobi Fighter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="gameCanvas"></canvas>
+    <div id="hud">
+      <div id="player-hud">
+        <span>Joueur</span>
+        <div class="health-bar-bg"><div id="player-hp" class="health-bar player-color"></div></div>
+      </div>
+      <div id="score-display">⚔️ SHINOBI FIGHTER ⚔️</div>
+      <div id="enemy-hud">
+        <div class="health-bar-bg"><div id="enemy-hp" class="health-bar enemy-color"></div></div>
+        <span>Ennemi</span>
+      </div>
+    </div>
+    <div id="controls">
+      <div id="dpad">
+        <button class="dpad-btn" id="btn-left">◀</button>
+        <button class="dpad-btn" id="btn-right">▶</button>
+      </div>
+      <div id="action-buttons">
+        <button class="action-btn" id="btn-attack">🥷 Attaque</button>
+        <button class="action-btn" id="btn-jump">⬆️ Saut</button>
+        <button class="action-btn" id="btn-special">💥 Spécial</button>
+      </div>
+    </div>
+    <div id="overlay">
+      <div id="overlay-content">
+        <h1 id="overlay-title">SHINOBI FIGHTER</h1>
+        <p id="overlay-msg">Affronte ton ennemi !</p>
+        <button id="overlay-btn">Commencer</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
